@@ -1,0 +1,308 @@
+/*ESTILOS GENERALES*/
+
+* {
+    font-family: "Ancizar Sans", sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(196, 192, 192);
+}
+
+/* --- Header y Nav --- */
+.navbar-nav .nav-link {
+    color: #ffffff;
+}
+
+.nav-logo {
+    width: 7rem;
+}
+
+.banner-liebre {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-color: #494a7e;
+    padding: 40px 20px; 
+    text-align: center; 
+}
+
+.banner-liebre h1 {
+    color: rgb(200, 209, 120);
+    font-size: 4rem; 
+}
+
+
+/* --- Main Content --- */
+.main-titulo {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Contenedor de productos */
+.main-products, .main-products2 {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;   
+    gap: 25px;
+    padding: 15px;
+}
+
+/* Tarjeta de producto */
+.card-product {
+    width: 90%; 
+    max-width: 400px; 
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden; 
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.card-product img {
+    width: 100%; 
+    height: 250px; 
+    object-fit: cover; 
+}
+
+.card-product h3 {
+    margin: 15px 0;
+}
+
+.card-product p {
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+
+.card-product-precio {
+    color: rgba(153, 30, 14, 0.89);
+    font-weight: 300;
+}
+
+.card-product-precio span {
+    text-decoration: line-through;
+    color: black;
+    margin-right: 10px;
+}
+
+.card-product-btn {
+    padding: 10px 20px;
+    background-color: rgba(40, 19, 158, 0.5);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* --- Footer --- */
+footer {
+    background-color: rgba(45, 34, 77, 255);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-redes {
+    display: flex;
+    justify-content: center; 
+    gap: 25px;
+    margin-top: 15px;
+}
+
+.footer-redes a img {
+    height: 2rem;
+}
+
+/* --- Estilos Página de Contacto --- */
+
+.contact-container {
+    padding: 40px;
+    max-width: 1200px;
+    margin: 40px auto;
+    background-color: #e3e4f5;
+    border-radius: 10px;
+}
+
+.contact-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact-title h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* --- Estilos del Formulario --- */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column; 
+    gap: 15px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-submit {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* --- Grid de Información --- */
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.info-box {
+    background-color: #ffffff;
+    padding: 35px 25px; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-box h3 {
+    color: #494a7e;
+    margin-bottom: 15px;
+}
+
+/* --- Estilos para el Mapa --- */
+.map-container {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.map-container .map-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.map-container p {
+    margin-bottom: 20px;
+}
+
+.map-container iframe {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+@media (min-width: 768px) {
+
+    .nav-logo {
+        width: 9rem; 
+    }
+    
+    .banner-liebre {
+        padding: 80px 40px; 
+    }
+
+    .banner-liebre h1 {
+        font-size: 5rem;
+    }
+
+    /* Contenedor de productos */
+    .main-products, .main-products2 {
+        flex-direction: row;  
+        flex-wrap: wrap;      
+        justify-content: center; 
+    }
+
+    /* Tarjeta de producto */
+    .card-product {
+        width: 45%; 
+    }
+    
+    .footer-redes {
+        justify-content: flex-end; 
+        margin-top: 0;
+    }
+    
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+
+    /* ---Contacto--- */
+    .form-row {
+        flex-direction: row;
+    }
+
+    .form-half {
+        width: calc(50% - 7.5px);
+    }
+
+    .info-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (min-width: 1024px) {
+    
+    .banner-liebre {
+        padding: 100px 100px;
+    }
+
+
+    .banner-liebre h1 {
+        font-size: 6rem; 
+    }
+
+    .main-products, .main-products2 {
+        flex-wrap: nowrap; 
+        padding: 15px 40px;
+    }
+
+    /* Tarjeta de producto */
+    .card-product {
+        width: 25rem;
+    }
+
+    .card-product img {
+        height: 20rem;
+    }
+
+    /* ---Contacto--- */
+    .contact-content {
+        flex-direction: row;
+        align-items: stretch; 
+    }
+
+    .contact-form {
+        flex: 1 1 50%;
+        padding-right: 20px;
+    }
+
+    .info-grid {
+        flex: 1 1 50%;
+        align-self: center; 
+    }
+}
