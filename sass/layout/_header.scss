@@ -1,0 +1,25 @@
+header {
+  .navbar {
+    background-color: $header-bg;
+  }
+
+  .navbar-nav .nav-link {
+    color: $nav-link-color;
+  }
+
+  .nav-logo {
+    width: 7rem;
+  }
+
+  .banner-liebre {
+    @extend %flex-center;
+    background-color: $banner-bg;
+    padding: 40px 20px;
+    text-align: center;
+
+    h1 {
+      color: $banner-h1-color;
+      font-size: 4rem;
+    }
+  }
+}

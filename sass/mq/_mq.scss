@@ -1,0 +1,91 @@
+@media (min-width: 768px) {
+  header {
+    .nav-logo {
+      width: 9rem;
+    }
+
+    .banner-liebre {
+      padding: 80px 40px;
+      h1 {
+        font-size: 5rem;
+      }
+    }
+  }
+
+  .main-products, .main-products2 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card-product {
+    width: 45%;
+  }
+
+ footer {
+  .footer-container {
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: left;
+  }
+
+  .footer-column {
+      flex: 1;
+      max-width: 30%;
+  }
+
+  .footer-redes {
+      justify-content: flex-start;
+  }
+}
+
+  .form-row {
+    flex-direction: row;
+  }
+
+  .form-half {
+    width: calc(50% - 7.5px);
+  }
+
+  .info-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  header {
+    .banner-liebre {
+      padding: 100px 100px;
+      h1 {
+        font-size: 6rem;
+      }
+    }
+  }
+
+  .main-products, .main-products2 {
+    flex-wrap: nowrap;
+    padding: 15px 40px;
+  }
+
+  .card-product {
+    width: 25rem;
+    img {
+      height: 20rem;
+    }
+  }
+
+  .contact-content {
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .contact-form {
+    flex: 1 1 50%;
+    padding-right: 20px;
+  }
+
+  .info-grid {
+    flex: 1 1 50%;
+    align-self: center;
+  }
+}

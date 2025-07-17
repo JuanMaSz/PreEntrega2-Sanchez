@@ -1,0 +1,22 @@
+// Utilities
+@import 'utilities/variables';
+@import 'utilities/extend';
+
+// Estilos Generales
+* {
+  font-family: $primary-font;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $body-bg;
+}
+
+// Layout
+@import 'layout/header';
+@import 'layout/main';
+@import 'layout/footer';
+
+// Media Queries
+@import 'mq/mq';
