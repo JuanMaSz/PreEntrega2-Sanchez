@@ -84,6 +84,10 @@ header .banner-liebre h1 {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.card-product-btn:hover {
+  background-color: rgba(28.4745762712, 13.5254237288, 112.4745762712, 0.5);
 }
 
 .contact-container {
